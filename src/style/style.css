@@ -1,0 +1,536 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:"Arial Unicode MS";
+}
+
+header{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 660px;
+    border-bottom: gray solid 10px;
+}
+
+.netflix-logo{
+    width: 130px;
+    fill: red;
+}
+
+nav{
+    padding: 25px 50px;
+}
+
+nav .navbar-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-item a{
+    text-decoration: none;
+}
+
+.navbar-item .menu-item{
+    display: flex;
+    align-items: center;
+}
+
+.menu-item #language , a{
+    margin: 0 10px;
+}
+
+.menu-item #language {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 7px 17px;
+    color: white;
+}
+
+.menu-item a{
+    background-color: red;
+    padding: 7px 17px;
+    border-radius: 4px;
+    color: white;
+}
+
+
+.tagline{
+    margin: 0 auto;
+    max-width: 950px;
+    padding: 75px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    color: white;
+}
+
+.tagline h1{
+    margin: 0 auto;
+    font-size: 4.75rem;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.tagline h2{
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 640px;
+    font-weight: 400;
+}
+.tagline p{
+    padding: 10px;
+}
+
+.search-box {
+    margin: 0 auto;
+    max-width: 990px;
+}
+
+.search-box input{
+    padding: 10px;
+    width: 50%;
+}
+
+.search-box button{
+    background: red;
+    color: white;
+    border: none;
+    padding: 11px;
+}
+
+.nikmati-tv{
+    display: flex;
+    flex-direction: row;
+    background: black;
+    color: white;
+    border-bottom: gray solid 10px;
+
+}
+
+.nikmati-tv article{
+    margin: 0 auto;
+    padding: 150px 0;
+    max-width: 400px;
+}
+
+.nikmati-tv article h2{
+    margin-bottom: .5rem;
+    font-size: 3.124rem;
+    line-height: 1.1;
+}
+
+.nikmati-tv article p{
+    font-size: 1.24rem;
+}
+
+/**/
+
+.download-acara{
+    display: flex;
+    flex-direction: row;
+    background: black;
+    color: white;
+    border-bottom: gray solid 10px;
+
+}
+
+.download-acara article{
+    margin: 0 auto;
+    padding: 150px 0;
+    max-width: 400px;
+}
+
+.download-acara article h2{
+    margin-bottom: .5rem;
+    font-size: 3.124rem;
+    line-height: 1.1;
+}
+
+.download-acara article p{
+    font-size: 1.24rem;
+}
+
+.thumbnail-download{
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+
+}
+
+.thumbnail-download img{
+    max-width: 400px;
+}
+
+.card{
+    display: flex;
+    max-width: 300px;
+    align-content: center;
+    padding: 8px 12px;
+    background: black;
+    max-height: 90px;
+    border: 2px solid hsla(0,0%,100%,.25);
+    border-radius: .75em;
+    position: absolute;
+    margin: 200px 35px;
+}
+
+.card-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-item .card-poster img{
+    max-height: 100%;
+    max-width: 100%;
+    overflow:hidden;
+}
+
+.card-item .card-body{
+    width: 220px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+.card-item .card-body p, a{
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0;
+}
+
+.card .card-side img{
+    height: 100%;
+    overflow: hidden;
+}
+
+.tanya-jawab-umum{
+    background: black;
+    padding: 20px 10px;
+}
+
+.tanya-jawab-umum h1{
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.pertanyaan {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.card-pertanyaan{
+    background: #303030;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.card-pertanyaan .card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8em 2.2em .8em 1.2em;
+    color: white;
+    border-bottom: black solid 1px;
+}
+.card-header .icon button{
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+
+.icon span{
+    font-size: 40px;
+}
+.card-pertanyaan .card-body{
+    display: none;
+    padding: .8em 2.2em .8em 1.2em;
+    color: white;
+    text-align: justify;
+}
+
+.email-subscribe {
+    padding: 20px 0;
+    text-align: center;
+    background: black;
+    color: white;
+    border-bottom: gray solid 10px;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+.subscribe button {
+    display: block;
+    border: none;
+    padding: 20px 20px;
+    background: red;
+    color: white;
+}
+
+.subscribe button:hover{
+    background: darkred;
+}
+.subscribe button .icon {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe button .icon span{
+    font-size: 16px;
+}
+
+.input-group {
+    position: relative;
+}
+
+input {
+    font-size: 16px;
+    padding: 20px 10px;
+    display: block;
+    width: 400px;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    color: #999;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 20px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -1px;
+    font-size: 12px;
+    color: gray;
+    font-weight: bold;
+}
+
+.bar {
+    position: relative;
+    display:block;
+    width:420px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: orangered;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 200px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+/* animations */
+@-webkit-keyframes inputHighlighter {
+    from { background: orangered; }
+    to   { width: 0; background: transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background: orangered; }
+    to   { width: 0; background: transparent; }
+}
+@keyframes inputHighlighter {
+    from { background: orangered; }
+    to   { width: 0; background: transparent; }
+}
+
+/*footer*/
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+footer{
+    background: black;
+    color: #737373;
+}
+
+.footer-title {
+    padding: 10px 0;
+    margin-bottom: 17px;
+}
+
+.footer-link{
+    display: flex;
+}
+
+.footer-link ul {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 100px;
+    padding: 0 12px 0 0;
+    vertical-align: top;
+    width: 25%;
+}
+
+.footer-link ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.footer-link a{
+    color: #737373;
+}
+
+footer .bahasa{
+    margin: 16px 0;
+}
+
+.bahasa select{
+    background: transparent;
+    color: #737373;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.copyright{
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .tagline h1{
+        font-size: 1.75rem;
+        font-weight: 400;
+        line-height: 1.1;
+    }
+
+    nav{
+        padding: 25px 10px;
+    }
+
+    .netflix-logo{
+        width:60px;
+
+    }
+    .nikmati-tv{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nikmati-tv article{
+        max-width: 300px;
+    }
+
+    .nikmati-tv article h2{
+        font-size: 2.124rem;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nikmati-tv article p{
+        font-size: 1.24rem;
+        text-align: center;
+    }
+
+    .nikmati-tv .thumbnail-tv img{
+        max-width: 100%;
+    }
+
+    .download-acara{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .download-acara article{
+        max-width: 300px;
+    }
+
+    .download-acara article h2{
+        font-size: 2.124rem;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .download-acara article p{
+        font-size: 1.24rem;
+        text-align: center;
+    }
+
+    .download-acara .thumbnail-download img{
+        max-width: 100%;
+    }
+
+    .card{
+        max-width: 50%;
+        height: 50px;
+        margin: 280px 115px;
+    }
+
+    .card-pertanyaan {
+        font-size: 14px;
+    }
+
+    input {
+        width: 200px;
+    }
+
+    .bar {
+        width:200px;
+    }
+
+    input:focus ~ .bar:before,
+    input:focus ~ .bar:after {
+        width: 30%;
+    }
+
+    footer{
+        padding: 20px;
+    }
+    .footer-link{
+        flex-direction: column;
+    }
+
+}
